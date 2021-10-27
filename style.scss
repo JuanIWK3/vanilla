@@ -31,6 +31,7 @@ nav {
     strong {
       color: cadetblue;
     }
+
   }
 
   .options {
@@ -38,6 +39,9 @@ nav {
       margin: 8px;
     }
     
+    @media only screen and (max-width: 512px) {
+      display: none;
+    }
   }
 
   .social {
@@ -47,6 +51,32 @@ nav {
         height: 20px;
       }
     }
+
+    @media only screen and (max-width: 512px) {
+      display: none;
+    }
+  }
+
+  .ham {
+    height: 25px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    div {
+      height: 5px;
+      width: 30px;
+      background-color: cadetblue;
+    }
+
+    @media only screen and (min-width: 512px) {
+      display: none;
+    }
   }
 }
 
+.menu {
+  flex-direction: column;
+  display: none;
+}

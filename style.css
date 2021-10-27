@@ -47,11 +47,58 @@ nav .options a {
   margin: 8px;
 }
 
+@media only screen and (max-width: 512px) {
+  nav .options {
+    display: none;
+  }
+}
+
 nav .social a {
   padding: 4px;
 }
 
 nav .social a img {
   height: 20px;
+}
+
+@media only screen and (max-width: 512px) {
+  nav .social {
+    display: none;
+  }
+}
+
+nav .ham {
+  height: 25px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .ham div {
+  height: 5px;
+  width: 30px;
+  background-color: cadetblue;
+}
+
+@media only screen and (min-width: 512px) {
+  nav .ham {
+    display: none;
+  }
+}
+
+.menu {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
