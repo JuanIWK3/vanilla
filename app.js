@@ -1,13 +1,6 @@
-const ham = document.querySelector('#ham');
-const menu = document.querySelector('#menu');
-let menuOpen = false;
+const ham = document.querySelector('#nav-toggle');
+const nav = document.querySelector('.nav');
 
 ham.addEventListener('click', () => {
-  if (!menuOpen) {
-    menu.style.display = 'flex';
-    menuOpen = true;
-  } else {
-    menu.style.display = 'none';
-    menuOpen = false;
-  }
+  nav.classList.toggle('show');
 })
