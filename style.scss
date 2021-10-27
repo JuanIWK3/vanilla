@@ -12,6 +12,105 @@ body {
   width: 100vw;
 }
 
+.nav {
+  background-color: white;
+  width: 100%;
+  max-height: 300px;
+  justify-content: space-between;
+
+  display: flex;
+  align-items: center;
+
+  padding: 16px;
+
+  box-shadow: 0px 1px 5px grey;
+
+  @media only screen and (max-width: 512px) {
+    flex-direction: column;
+  }
+
+  .logotype {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: 512px) {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    strong {
+      color: cadetblue;
+    }
+  }
+
+  .options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 8px;
+      padding: 8px;
+      width: 100%;
+      transition: all 0.3s linear;
+      &:hover {
+        background: rgba(54, 184, 189, 0.356);
+        margin-left: 5px;
+      }
+    }
+
+    @media only screen and (max-width: 512px) {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  .social {
+    overflow: hidden;
+    height: 20px;
+    a {
+      padding: 4px;
+      img {
+        height: 20px;
+      }
+    }
+
+    @media only screen and (max-width: 512px) {
+      margin-top: 8px;
+    }
+  }
+
+  .ham {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.2s linear;
+
+    div {
+      height: 5px;
+      width: 30px;
+      border-radius: 2rem;
+      background-color: cadetblue;
+    }
+
+    &:hover {
+      transform: rotate(90deg);
+    }
+
+    @media only screen and (min-width: 512px) {
+      display: none;
+    }
+  }
+}
+
 .show {
   background-color: white;
   width: 100%;
@@ -49,118 +148,25 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    a {
-      margin: 8px;
-    }
-    overflow: hidden;
-
-    @media only screen and (max-width: 512px) {
-      flex-direction: column;
-    }
-  }
-
-  .social {
-    overflow: hidden;
 
     a {
-      padding: 4px;
-      img {
-        height: 20px;
-      }
-    }
-  }
-
-  .ham {
-    height: 25px;
-    width: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: all 0.2s linear;
-
-    div {
-      height: 5px;
-      width: 30px;
-      border-radius: 2rem;
-      background-color: cadetblue;
-    }
-
-    &:hover {
-      transform: rotate(90deg);
-    }
-
-    @media only screen and (min-width: 512px) {
-      display: none;
-    }
-  }
-}
-
-.nav {
-  background-color: white;
-  width: 100%;
-  justify-content: space-between;
-
-  display: flex;
-  align-items: center;
-
-  padding: 16px;
-
-  box-shadow: 0px 1px 5px grey;
-
-  @media only screen and (max-width: 512px) {
-    flex-direction: column;
-  }
-
-  .logotype {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    @media only screen and (max-width: 512px) {
-      width: 100%;
-      justify-content: space-between;
-    }
-
-    strong {
-      color: cadetblue;
-    }
-  }
-
-  .options {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      margin: 8px 0 8px 0;
       padding: 8px;
-      width: 100%;
-      &:hover {
-        background: rgba(54, 184, 189, 0.356);
-      }
     }
-    overflow: hidden;
 
     @media only screen and (max-width: 512px) {
       flex-direction: column;
-      width: 100%;
     }
   }
 
   .social {
-    height: 20px;
+    overflow: hidden;
+
     a {
       padding: 4px;
       img {
         height: 20px;
       }
-    }
-
-    @media only screen and (max-width: 512px) {
-      margin-top: 8px;
     }
   }
 
